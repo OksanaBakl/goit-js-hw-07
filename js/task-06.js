@@ -23,21 +23,20 @@
 //   border-color: #f44336;
 // }
 
-const inputText = document.querySelector("#validation-input");
-const inputTextLength = inputText.getAttribute("data-length");
+const inputText = document.querySelector('#validation-input');
+const inputTextLength = inputText.getAttribute('data-length');
 
 // console.log(inputTextLength);
 
-inputText.addEventListener("blur", inputDiffTextColor);
-
 function inputDiffTextColor() {
-	if (+inputTextLength === inputText.value.length) {
-		inputText.classList.add("valid");
-		inputText.classList.remove("invalid");
-	} else {
-		inputText.classList.add(".invalid");
-		inputText.classList.remove(".valid");
-	}
+  if (+inputTextLength === inputText.value.length) {
+    inputText.classList.add('valid');
+    inputText.classList.remove('invalid');
+  } else {
+    inputText.classList.add('invalid');
+    inputText.classList.remove('valid');
+  }
+  ы;
 }
 
-inputText.addEventListener("blur", inputDiffTextColor);
+inputText.addEventListener('blur', inputDiffTextColor);
